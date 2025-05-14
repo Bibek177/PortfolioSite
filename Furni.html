@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni by Bibek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut ico" href="https://cdn.vectorstock.com/i/preview-1x/63/24/furniture-logo-home-furnishing-design-room-icon-vector-43076324.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- Responsive Navigation Bar -->
+    <div class="bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo -->
+                <div class="text-3xl font-bold text-white">
+                    Furni <span>.</span>
+                </div>
+
+                <!-- Nav Links (hidden on small screens) -->
+                <div class="hidden md:flex space-x-6 text-white text-lg">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="hidden md:flex space-x-4 text-white text-2xl">
+                    <i class="ri-user-3-line"></i>
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden text-white text-3xl">
+                    <button id="menu-btn" onclick="toggleMenu()">
+            ☰
+          </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="md:hidden hidden flex-col space-y-3 py-4 text-white text-lg">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+                <div class="flex space-x-4 text-2xl">
+                    <i class="ri-user-3-line"></i>
+                    <i class="ri-shopping-cart-line"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple JavaScript for toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+
+
+
+    <!-- Responsive 2nd Part -->
+    <div class="grid grid-cols-1 md:grid-cols-2 h-auto md:h-96">
+
+        <!-- Text Section -->
+        <div class="bg-green-600 flex flex-col justify-center py-10 px-6 md:px-10">
+            <p class="text-4xl font-bold text-white">Modern Interior Design</p>
+            <p class="text-4xl font-bold text-white">Studio</p>
+
+            <p class="py-4 text-yellow-100">
+                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-yellow-500 font-bold py-2 px-4 rounded-full focus:shadow-outline">
+          Shop Now
+        </button>
+                <button class="bg-green-500 font-bold py-2 px-4 rounded-full text-white focus:shadow-outline">
+          Explore
+        </button>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="bg-green-600 flex justify-center items-center">
+            <img class="max-h-90 md:max-h-80 w-auto" src="https://themewagon.github.io/furni/images/couch.png" alt="Couch">
+        </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="h-10 bg-green-600"></div>
+
+
+
+    <!-- Crafted Section -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-7 bg-white px-4">
+
+        <!-- Text Column -->
+        <div class="py-9">
+            <p class="text-3xl">Crafted with</p>
+            <p class="text-3xl">excellent</p>
+            <p class="text-3xl">material.</p>
+            <div>
+                <p class="py-3">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+            </div>
+            <div class="py-2">
+                <button class="bg-amber-800 text-white font-bold py-2 px-5 rounded-full focus:shadow-outline">Explore</button>
+            </div>
+        </div>
+
+        <!-- Product Images -->
+        <div class="relative h-64 md:h-96 overflow-hidden group">
+            <img src="https://themewagon.github.io/furni/images/product-1.png" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
+
+        <div class="relative h-64 md:h-96 overflow-hidden group">
+            <img src="https://themewagon.github.io/furni/images/product-2.png" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
+
+        <div class="relative h-64 md:h-96 overflow-hidden group">
+            <img src="https://themewagon.github.io/furni/images/product-3.png" alt="Environment" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        </div>
+    </div>
+
+    <!-- Product Names & Prices -->
+    <div class="grid grid-cols-1 md:grid-cols-4 text-center py-4 px-4">
+        <div></div>
+        <!-- Empty spacer for alignment -->
+
+        <div>
+            <p class="text-black">Nordic Chair</p>
+            <p class="font-bold text-black">$50.00</p>
+        </div>
+
+        <div>
+            <p class="text-black">Kruzo Aero Chair</p>
+            <p class="font-bold text-black">$78.00</p>
+        </div>
+
+        <div>
+            <p class="text-black">Ergonomic Chair</p>
+            <p class="font-bold text-black">$43.00</p>
+        </div>
+    </div>
+
+
+
+
+
+    <br><br><br><br><br>
+
+    <!-- why to choose us          -->
+    <div class="h-44">
+        <p class="px-4 text-4xl">Why Choose Us </p>
+        <p class="py-3 px-3">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam</p>
+        <p class="px-3">vulputate velit imperdiet dolor tempor tristique.</p>
+
+
+    </div>
+
+
+    <!-- Fast & Free Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 bg-white">
+
+        <!-- Left Column -->
+        <div>
+            <img src="https://themewagon.github.io/furni/images/truck.svg" alt="">
+            <p class="font-bold py-1">Fast & Free Shipping</p>
+            <p>Donec vitae odio quis nisl dapibus</p>
+            <p>malesuada. Nullam ac aliquet velit.</p>
+            <p>Aliquam vulputate.</p>
+
+            <div class="pt-6">
+                <img class="pb-2" src="https://themewagon.github.io/furni/images/support.svg" alt="">
+                <p class="font-bold">24/7 Support</p>
+                <p>Donec vitae odio quis nisl dapibus</p>
+                <p>malesuada. Nullam ac aliquet velit.</p>
+                <p>Aliquam vulputate.</p>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div>
+            <img src="https://themewagon.github.io/furni/images/bag.svg" alt="">
+            <p class="font-bold">Easy to Shop</p>
+            <p>Donec vitae odio quis nisl dapibus</p>
+            <p>malesuada. Nullam ac aliquet velit.</p>
+            <p>Aliquam vulputate.</p>
+
+            <div class="pt-6">
+                <img class="pb-2" src="https://themewagon.github.io/furni/images/return.svg" alt="">
+                <p class="font-bold">Hassle Free Returns</p>
+                <p>Donec vitae odio quis nisl dapibus</p>
+                <p>malesuada. Nullam ac aliquet velit.</p>
+                <p>Aliquam vulputate.</p>
+            </div>
+        </div>
+
+        <!-- Image Column -->
+        <div>
+            <img class="w-full h-auto rounded-3xl object-cover" src="https://themewagon.github.io/furni/images/why-choose-us-img.jpg" alt="">
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+
+
+
+    <!-- We Help Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-slate-50">
+
+        <!-- Image Column -->
+        <div class="flex justify-center items-center">
+            <img src="https://themewagon.github.io/furni/images/img-grid-1.jpg" class="w-full max-w-md h-auto rounded-xl" alt="Image">
+        </div>
+
+        <!-- Text Column -->
+        <div class="px-2 md:px-8">
+            <p class="text-3xl md:text-4xl font-bold">We Help You Make Modern</p>
+            <p class="text-3xl md:text-4xl font-bold">Interior Design</p>
+
+            <div class="py-5 text-sm md:text-base text-gray-600">
+                <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae</p>
+                <p>odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</p>
+                <p>Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et</p>
+                <p>malesuada.</p>
+            </div>
+
+            <ul class="flex flex-wrap gap-4 text-sm md:text-base text-gray-800">
+                <li class="flex items-center gap-2"><i class="ri-circle-fill text-xs"></i> Donec vitae odio quis</li>
+                <li class="flex items-center gap-2"><i class="ri-circle-fill text-xs"></i> Donec vitae odio quis</li>
+                <li class="flex items-center gap-2"><i class="ri-circle-fill text-xs"></i> Onec vitae odio quis</li>
+                <li class="flex items-center gap-2"><i class="ri-circle-fill text-xs"></i> Donec vitae odio quis</li>
+            </ul>
+
+            <div class="py-6">
+                <button class="bg-amber-800 text-white font-bold py-2 px-6 rounded-full focus:shadow-outline hover:bg-amber-700 transition duration-300">
+          Explore
+        </button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Nordic Chair Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 py-10 bg-white">
+
+        <!-- First Product -->
+        <div class="flex items-center gap-4">
+            <img src="https://themewagon.github.io/furni/images/product-1.png" class="w-28 sm:w-32 h-auto" alt="Nordic Chair">
+            <div class="text-gray-700 text-sm">
+                <p class="font-semibold text-lg">Nordic Chair</p>
+                <p>Donec facilisis quam ut purus</p>
+                <p>rutrum lobortis. Donec vitae odio</p>
+                <p class="text-green-700 font-semibold mt-2 cursor-pointer hover:underline">Read More</p>
+            </div>
+        </div>
+
+        <!-- Second Product -->
+        <div class="flex items-center gap-4">
+            <img src="https://themewagon.github.io/furni/images/product-2.png" class="w-28 sm:w-32 h-auto" alt="Kruzo Aero Chair">
+            <div class="text-gray-700 text-sm">
+                <p class="font-semibold text-lg">Kruzo Aero Chair</p>
+                <p>Donec facilisis quam ut purus</p>
+                <p>rutrum lobortis. Donec vitae odio</p>
+                <p class="text-green-700 font-semibold mt-2 cursor-pointer hover:underline">Read More</p>
+            </div>
+        </div>
+
+        <!-- Third Product -->
+        <div class="flex items-center gap-4">
+            <img src="https://themewagon.github.io/furni/images/product-3.png" class="w-28 sm:w-32 h-auto" alt="Ergonomic Chair">
+            <div class="text-gray-700 text-sm">
+                <p class="font-semibold text-lg">Ergonomic Chair</p>
+                <p>Donec facilisis quam ut purus</p>
+                <p>rutrum lobortis. Donec vitae odio</p>
+                <p class="text-green-700 font-semibold mt-2 cursor-pointer hover:underline">Read More</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- tes -->
+
+    <div class="py-10 px-4 sm:px-10 md:px-20 bg-white text-center">
+        <h2 class="text-3xl font-semibold mb-6">Testimonials</h2>
+
+        <div class="max-w-4xl mx-auto text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p>“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada.</p>
+            <p>Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Integer convallis volutpat dui quis scelerisque.”</p>
+        </div>
+
+        <div class="flex justify-center mt-6">
+            <img class="rounded-full w-16 h-16" src="https://themewagon.github.io/furni/images/person-1.png" alt="Maria Jones">
+        </div>
+
+        <p class="mt-2 font-medium text-gray-800">Maria Jones</p>
+        <p class="text-gray-500 text-sm">CEO, Co-Founder, XYZ Inc.</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- recent  -->
+    <div class="h-56">
+        <p class="px-8 text-4xl py-12 ">Recent Blog</p>
+        <p class="text-right   px-5">View All Posts</p>
+    </div>
+
+
+
+
+
+
+    <!-- first time  -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-10 px-4 sm:px-10 md:px-20">
+        <div class="h-96 rounded-3xl overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover rounded-3xl" src="https://themewagon.github.io/furni/images/post-1.jpg" alt="Post 1">
+            <div class="px-5 py-4 bg-white">
+                <p class="font-medium text-lg">First Time Home Owner Ideas</p>
+                <p class="text-sm text-gray-500">by Kristin Watson on Dec 19, 2021</p>
+            </div>
+        </div>
+
+        <div class="h-96 rounded-3xl overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover rounded-3xl" src="https://themewagon.github.io/furni/images/post-2.jpg" alt="Post 2">
+            <div class="px-5 py-4 bg-white">
+                <p class="font-medium text-lg">How To Keep Your Furniture Clean</p>
+                <p class="text-sm text-gray-500">by Robert Fox on Dec 15, 2021</p>
+            </div>
+        </div>
+
+        <div class="h-96 rounded-3xl overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover rounded-3xl" src="https://themewagon.github.io/furni/images/post-3.jpg" alt="Post 3">
+            <div class="px-5 py-4 bg-white">
+                <p class="font-medium text-lg">Small Space Furniture Apartment Ideas</p>
+                <p class="text-sm text-gray-500">by Kristin Watson on Dec 12, 2021</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10 px-4 sm:px-10 md:px-20">
+        <!-- Newsletter Subscription Form -->
+        <div class="h-auto bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-lg font-medium text-green-500 flex items-center gap-2">
+                <i class="ri-mail-line"></i> Subscribe to Newsletter
+            </p>
+            <p class="text-gray-600 my-4">Stay updated with the latest products and offers.</p>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                <input class="px-5 py-3 rounded-lg border border-gray-300 w-full sm:w-72" type="text" placeholder="Enter Your Name">
+                <input class="px-5 py-3 rounded-lg border border-gray-300 w-full sm:w-72" type="email" placeholder="Enter Your Email">
+                <button class="bg-green-500 text-white py-2 px-5 rounded-lg flex items-center justify-center focus:shadow-outline">
+                    <i class="ri-send-plane-2-fill"></i> 
+                </button>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="h-auto">
+            <img class="w-full h-full object-cover rounded-lg shadow-lg" src="https://themewagon.github.io/furni/images/sofa.png" alt="Sofa">
+        </div>
+    </div>
+
+
+    <div class="h-20 bg-white">
+        <!-- Logo Section -->
+        <ul class="flex px-3 py-3 text-3xl font-bold text-green-600 gap-7">
+            <li>Furni <span>.</span></li>
+        </ul>
+    </div>
+
+    <!-- Footer Links Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-6 py-10">
+        <!-- Column 1: Description -->
+        <div class="h-auto text-sm">
+            <p>Donec facilisis quam ut purus rutrum lobortis.</p>
+            <p>Donec vitae odio quis nisl dapibus malesuada.</p>
+            <p>Nullam ac aliquet velit. Aliquam vulputate velit.</p>
+            <p>imperdiet dolor tempor tristique. Pellentesque.</p>
+            <p>habitant morbi tristique.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="h-auto px-7 py-5">
+            <p class="font-semibold py-1">About Us</p>
+            <p class="py-1">Services</p>
+            <p class="py-1">Blog</p>
+            <p class="py-1">Contact Us</p>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="h-auto px-7 py-5">
+            <p class="font-semibold py-1">Support</p>
+            <p class="py-1">Knowledge Base</p>
+            <p class="py-1">Live Chat</p>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="h-auto px-7 py-5">
+            <p class="font-semibold py-1">Jobs</p>
+            <p class="py-1">Our Team</p>
+            <p class="py-1">Leadership</p>
+            <p class="py-1">Privacy Policy</p>
+        </div>
+
+        <!-- Column 5: Products -->
+        <div class="h-auto px-7 py-5">
+            <p class="font-semibold py-1">Nordic Chair</p>
+            <p class="py-1">Kruzo Aero</p>
+            <p class="py-1">Ergonomic Chair</p>
+        </div>
+    </div>
+
+    <!-- Social Media Icons Section -->
+    <div class="h-24 bg-white py-4">
+        <ul class="flex justify-center gap-6">
+            <li><i class="ri-facebook-fill text-2xl"></i></li>
+            <li><i class="ri-twitter-fill text-2xl"></i></li>
+            <li><i class="ri-instagram-line text-2xl"></i></li>
+            <li><i class="ri-linkedin-box-fill text-2xl"></i></li>
+        </ul>
+    </div>
+
+    <!-- Footer Separator -->
+    <hr class="my-4 border-gray-300">
+
+    <!-- Footer Bottom Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 py-6 bg-white">
+        <div class="h-auto">
+            Design by: <a href="index.html" class="text-blue-500">Bibek Ghimire</a>
+        </div>
+
+        <div class="h-auto">
+            <ul class="flex justify-center sm:justify-end gap-6">
+                <li><a href="#" class="text-gray-600">Terms & Conditions</a></li>
+                <li><a href="#" class="text-gray-600">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
